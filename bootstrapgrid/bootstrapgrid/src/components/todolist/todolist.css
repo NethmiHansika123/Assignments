@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 200px;
+    border: 10px solid mistyrose;
+}
+
+.h1{
+    align-items: center;
+}
+.form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 520px;
+    height: 80px;
+}
+
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 24px;
+} 
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
