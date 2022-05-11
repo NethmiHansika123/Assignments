@@ -1,0 +1,46 @@
+
+			Steps
+
+1.//STORE -> GLOBALIZED STATE
+
+import { CreateStore} from 'redux';
+
+2.//ACTION INCREMENT
+
+const increment = () => {
+	return{
+
+	 type: 'INCREMENT'
+		};
+	};
+
+
+const decrement = () => {
+	return{
+
+	 type: 'DECREMENT'
+		};
+	};
+
+3.//REDUCER
+
+const counter = (state = 0, action) => {
+
+	switch(action.type){
+		case: "INCREMENT":
+			return state + 1;
+		case: "DECREMENT":
+			return state - 1;
+
+
+}
+};
+let store = CreateStore(counter);
+
+//Display in the console
+
+store.subscribe( ()=> console.log(store.getState() )));
+
+4.//DISPATCH
+
+store.dispatch((increment));
